@@ -1,0 +1,14 @@
+<section class={{ShowcaseSection}}>
+    <div class="container">
+    <app-carousel-navigation></app-carousel-navigation>
+
+
+    <section class="logoContainer d-flex justify-content-between align-items-center my-5">
+
+        <figure *ngFor="let logos of complogos" class="logoss">
+            <img [src]= "logos.logo"/>
+        </figure>
+
+    </section>
+    </div>  
+</section>

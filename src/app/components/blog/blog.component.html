@@ -1,0 +1,22 @@
+<section class="blogSection">
+
+    <div class="container">
+        <article class="TopText text-center">
+            <h2> Happy <em><span>Clients</span></em> Says </h2>
+            <p> lorem50Lorem ipsum dolor sit amet consectetur <br />adipisicing elit. Modi, inventore illo?</p>
+        </article>
+
+        <article class="blogContent">
+            <article *ngFor="let blog of blogInfo" class="bloginfo d-flex mt-5">
+                <img [src]="blog.img" />
+                <article class="innerBlogInfo">
+                    <article class="innerBlogTopText d-flex flex-column">
+                        <h6><span> {{blog.headerName}}</span></h6> 
+                        <p>{{blog.headerTitle}} </p>
+                    </article>
+                    <p><em> " {{blog.DataInfo}} "</em> </p>
+                </article>
+            </article>
+        </article>
+    </div>
+</section>

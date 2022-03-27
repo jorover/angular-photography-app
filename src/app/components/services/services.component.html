@@ -1,0 +1,96 @@
+<section class="ServicesSection">
+    <div class="container">
+        <article class="TopText text-center">
+            <h2> What <em><span> We </span></em> Offer</h2>
+            <p> Lorem ipsum dolor sit amet consectetur <br />adipisicing elit. Modi, inventore illo?</p>
+        </article>
+    
+
+    <article class="ServicesContent">
+        <article class="Services text-center my-3" *ngFor="let service of servicesInfo">
+            <img [src] = "service.img" />
+            <h4> {{service.ServicesText}}</h4>
+            <p> {{service.info}} </p>
+        </article>
+
+    </article>
+
+</div>
+
+
+<section class="PricingPlanSection">
+
+    <div class="container">
+        <article class="TopText text-center">
+            <h2> Perfect <em><span> Plan </span></em> Price </h2>
+            <p> Lorem ipsum dolor sit amet consectetur <br />adipisicing elit. Modi, inventore illo?</p>
+        </article>
+
+    </div>
+
+    <article class="PricingPlanContent mt-5">
+        <div class="container m-auto text-center pricingPlanDetails">
+            <article class="PricingPlan">
+                <article class="PricingText pt-5">
+                    <h4> Wedding </h4>
+                    <p> Attend only first day </p>
+                    <p class="Price"> <span>$ 76.00  </span></p>
+                </article>
+
+                <article class="PricingList">
+                    <ul>
+                        <li> Unlimited Entrance </li>
+                        <li> Comfortable Seat </li>
+                        <li> Paid Certificate </li>
+                        <li> Day one Workshop </li>
+                        <li> One Certificate </li>
+                    </ul>
+                </article>
+
+                <button type="button" class="btn btn-dark btn-md"> {{Btntitle}} </button>
+            </article>
+
+            <article class="PricingPlan">
+                <article class="PricingText pt-5">
+                    <h4> Studio </h4>
+                    <p> Attend only first day </p>
+                    <p class="Price"> <span>$ 84.00  </span></p>
+                </article>
+
+                <article class="PricingList">
+                    <ul>
+                        <li> Unlimited Entrance </li>
+                        <li> Comfortable Seat </li>
+                        <li> Paid Certificate </li>
+                        <li> Day one Workshop </li>
+                        <li> One Certificate </li>
+                    </ul>
+                </article>
+
+                <button type="button" class="btn btn-dark btn-md"> {{Btntitle}} </button>
+            </article>
+
+            <article class="PricingPlan">
+                <article class="PricingText pt-5">
+                    <h4> Fashion </h4>
+                    <p> Attend only first day </p>
+                    <p class="Price"> <span>$ 65.00  </span></p>
+                </article>
+                <article class="PricingList">
+                    <ul>
+                        <li> Unlimited Entrance </li>
+                        <li> Comfortable Seat </li>
+                        <li> Paid Certificate </li>
+                        <li> Day one Workshop </li>
+                        <li> One Certificate </li>
+                    </ul>
+                </article>
+
+                <button type="button" class="btn btn-dark btn-md"> {{Btntitle}} </button>
+            </article>
+    </div>
+    </article>
+
+</section>
+
+</section>

@@ -1,1 +1,564 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.TopBarContainer {
+  width: 100%;
+  padding-top: 20px;
+  min-height: 650px;
+  background: url("/assets/cmm.jpeg") no-repeat center center/cover;
+}
+
+.CompLogo {
+  width: 5%;
+  padding-top: 9px;
+  font-size: 1.3rem;
+}
+
+.NavBarSocialsContainer {
+  width: 80%;
+  padding-top: 10px;
+}
+
+.NavBar {
+  width: 65%;
+}
+
+.SocialsIconContainer {
+  width: 30%;
+}
+
+.NavBar,
+.SocialsIconContainer {
+  height: 35px;
+}
+
+li {
+  list-style: none;
+}
+
+.SocialsIconContainer {
+  width: 25%;
+  transform: translateY(-2.5px);
+}
+
+.SocialsIcon {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.SocialsIcon img {
+  width: 20px;
+  height: 20px;
+}
+
+.hamburgerMenu {
+  transform: translateY(3.5px);
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hambugerOpenClose {
+  float: right;
+  width: 5%;
+  margin-right: 30px;
+}
+
+.sideMenu {
+  width: 0%;
+  overflow: hidden;
+  height: inherit;
+  text-align: center;
+  transition: 0.5s;
+  position: absolute;
+  top: 42px;
+  right: 0px;
+}
+
+.sideMenuList {
+  min-height: 580px;
+  background: #000;
+  color: #fff;
+  opacity: 0.8;
+  padding: 15px;
+}
+
+.sideMenuList li {
+  cursor: pointer;
+  padding: 5px;
+  width: 50%;
+  margin: auto;
+  transition: 0.5s ease-in-out;
+}
+
+.sideMenuList li:hover {
+  background: #5a1691;
+}
+
+.open-Menu {
+  width: 25px;
+  height: 25px;
+}
+
+.close-Menu {
+  width: 20px;
+  height: 20px;
+}
+
+.open-Menu,
+.close-Menu {
+  cursor: pointer;
+}
+
+.open-Menu,
+.openCloseMenu .close-Menu {
+  display: block;
+}
+
+.close-Menu,
+.openCloseMenu .open-Menu {
+  display: none;
+}
+
+.openCloseMenu .sideMenu {
+  width: 50%;
+}
+
+.HeroText {
+  margin-top: 200px;
+}
+
+.HeroText h1 {
+  font-size: 2.3rem;
+  line-height: 1.3;
+}
+
+.HeroText p {
+  margin: 20px auto;
+}
+
+span {
+  color: #5a1691;
+}
+
+.HeroBtn,
+.projectBtn {
+  display: inline-block;
+  border: none;
+  padding: 15px 25px;
+  background: #5a1691;
+  color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.ReadBtn {
+  background: #000000;
+  margin-left: 20px;
+}
+
+.GalleryContainer {
+  min-height: 700px;
+  width: 100vw;
+  margin-top: 130px;
+}
+
+.GalleryImagesContainer {
+  min-height: 600px;
+  margin: 50px auto;
+}
+
+.GalleryImgWrapper {
+  min-height: 500px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+
+.GalleryImgWrapper Img {
+  width: inherit;
+  height: 250px;
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+.GalleryImgWrapper Img:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+.ServicesSection,
+.PricingPlanSection {
+  min-height: 550px;
+  margin-top: 100px;
+}
+
+.ServicesContent {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+}
+
+.ServicesContent,
+.ProjectSection,
+.blogSection,
+.ShowcaseSection {
+  margin-top: 100px;
+}
+
+.ServicesSection .TopText,
+.blogSection .TopText {
+  padding-top: 40px;
+}
+
+.Services {
+  padding: 15px;
+  background: #f5fbff;
+  box-shadow: 1px 1.3px 1px 1px #bdbdbd;
+}
+
+.Services,
+.PricingPlan {
+  background: #f5fbff;
+  box-shadow: 1px 1.3px 1px 1px #bdbdbd;
+}
+
+.pricingPlanDetails,
+.footerContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.Services,
+.PricingPlanSection {
+  background: #f5fbff;
+}
+
+.PricingPlanSection,
+.blogSection {
+  background: #fff7fe;
+}
+
+.Services h4 {
+  margin: 30px auto;
+}
+
+.PricingPlan {
+  min-height: 350px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+.PricingList li {
+  margin: 20px auto;
+}
+
+.PricingList li::before {
+  content: " \02C3";
+  font-size: 1.6rem;
+  position: relative;
+  top: 7px;
+  right: 7px;
+}
+
+.Price {
+  font-size: 2.5rem;
+}
+
+.ProjectSection,
+.blogSection,
+.ShowcaseSection {
+  min-height: 650px;
+}
+
+.projectsImg,
+.ProjectsText {
+  width: 45%;
+  min-height: 450px;
+}
+
+.projectsImg img {
+  width: 100%;
+  height: 600px;
+}
+
+.ProjectsText {
+  padding-top: 100px;
+}
+
+.blogContent {
+  width: 60%;
+  margin: 40px auto;
+  padding-bottom: 30px;
+}
+
+.innerBlogInfo {
+  padding: 10px;
+  height: min-content;
+  background: #ffffff;
+  width: 60%;
+}
+
+.bloginfo img {
+  width: 40%;
+}
+
+.innerBlogInfo p {
+  font-size: 0.8rem;
+}
+
+.picsum-img-wrapper {
+  width: 100%;
+}
+
+.picsum-img-wrapper img {
+  width: 32.5%;
+  height: 450px;
+  margin-left: 5px;
+}
+
+.logoContainer {
+  width: 100%;
+}
+
+.logoContainer img {
+  max-width: 130px;
+}
+
+footer {
+  min-height: 300px;
+  background: #000000;
+  color: #ffffff;
+}
+
+.footerText {
+  margin: 20px 0px;
+  padding: 10px;
+}
+
+.footerSocials {
+  width: 75%;
+}
+
+.footerBtn,
+.footerInput {
+  padding: 5px 10px;
+  border: none;
+}
+
+.footerBtn {
+  background: #b356ff;
+  color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .ServicesContent {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media (max-width: 995px) {
+  .NavBarSocialsContainer {
+    width: 85%;
+  }
+
+  .NavBar {
+    width: 70%;
+  }
+
+  .GalleryImgWrapper {
+    grid-template-columns: auto auto;
+  }
+
+  .ServicesContent {
+    grid-template-columns: auto auto;
+  }
+
+  .ProjectsText {
+    padding-top: 60px;
+    width: 50%;
+  }
+
+  .blogContent {
+    width: 80%;
+  }
+
+  .picsum-img-wrapper {
+    display: none;
+  }
+
+  .ShowcaseSection {
+    min-height: 100px;
+  }
+
+  .footerContent {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .NavBarSocialsContainer {
+    width: 0%;
+  }
+
+  .NavBar,
+  .SocialsIcon {
+    display: none;
+  }
+
+  .hamburgerMenu {
+    display: block;
+  }
+
+  .HeroText h1 {
+    font-size: 2rem;
+  }
+
+  .pricingPlanDetails {
+    grid-template-columns: auto auto;
+  }
+
+  .projectsImg {
+    display: none;
+  }
+
+  .ProjectsText {
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .blogSection {
+    margin-top: 0px;
+  }
+
+  .blogContent {
+    width: 100%;
+  }
+
+  .innerBlogTopText h6 {
+    width: 50%;
+    height: 20px;
+  }
+
+  .innerBlogTopText p:nth-child(2) {
+    width: 50%;
+    height: 20px;
+  }
+
+  .logoContainer {
+    flex-direction: column;
+  }
+
+  .footerContent {
+    grid-template-columns: auto;
+    text-align: center;
+  }
+
+  .footerSocials {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .HeroText {
+    width: 70%;
+  }
+
+  .HeroText h1 {
+    font-size: 1.6rem;
+  }
+
+  .HeroBtn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    display: block;
+    width: 50%;
+    margin: 20px 0px;
+  }
+}
+
+@media (max-width: 550px) {
+  .HeroText h1 {
+    font-size: 1.3rem;
+  }
+
+  .HeroBtn {
+    padding: 7px 15px;
+    font-size: 0.7rem;
+  }
+
+  .ServicesContent {
+    font-size: 0.9rem;
+  }
+
+  .bloginfo,
+  .innerBlogTopText {
+    flex-direction: column;
+  }
+
+  .bloginfo img,
+  .bloginfo .innerBlogInfo {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .innerBlogTopText h6,
+  .innerBlogTopText p:nth-child(2) {
+    width: 50%;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .GalleryImgWrapper {
+    grid-template-columns: auto;
+    width: 90%;
+    transform: translateX(12%);
+  }
+
+  .TopText h2,
+  .PricingText h4,
+  .PricingText span,
+  .ProjectsText h2 {
+    font-size: 1.3rem;
+  }
+
+  .projectBtn {
+    padding: 7px 12px;
+  }
+
+  .projectBtn {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .ServicesContent,
+  .pricingPlanDetails {
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .HeroBtn {
+    padding: 5px 10px;
+    width: 60%;
+  }
+}

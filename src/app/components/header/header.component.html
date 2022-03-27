@@ -1,0 +1,53 @@
+<header class="TopBarContainer">
+    <div class="container">
+        <header class="TopBar d-flex justify-content-between align-items-center">
+            <article class="CompLogo">
+                <h4> FP </h4>
+            </article>
+
+            <aside class="NavBarSocialsContainer d-flex justify-content-between align-items-center">
+                <nav class="NavBar">
+                    <ul class="NavMenu d-flex justify-content-between align-items-center">
+                        <li> HOME </li>
+                        <li> ABOUT </li>
+                        <li> SERVICES </li>
+                        <li> PROJECT </li>
+                        <li> BLOG </li>
+                        <li> CONTACT </li>
+                    </ul>
+                </nav>
+
+            <article class="SocialsIconContainer">
+                <article class="SocialsIcon" *ngFor="let icon of icons"> 
+                    <img [src] = "icon.icon" />       
+                </article>
+            </article>
+            </aside>
+
+            <aside [ngClass]= 'hamburgerMenu'>
+                <figure class="hambugerOpenClose">
+                    <img [src] ='openMenu' alt="Open Menu" class="open-Menu" (click)="openCloseMenu()">
+                    <img [src]= 'closeMenu' class="close-Menu" alt="close Menu" (click)="openCloseMenu()">
+                </figure>
+
+                <article class="sideMenu">
+                    <ul class="sideMenuList d-flex flex-column justify-content-between">
+                        <li> HOME </li>
+                        <li> ABOUT </li>
+                        <li> SERVICES </li>
+                        <li> PROJECT </li>
+                        <li> BLOG </li>
+                        <li> CONTACT </li>
+                    </ul>
+                </article>
+            </aside>
+        </header>
+
+            <article class="HeroText">
+                <h1> I'm Debbie, a Fulltime <br /> <span>PROFESSIONAL PHOTOGRAPHER</span></h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <button type="button" class="HeroBtn"> {{PrimaryBtn}}</button>
+                <button type="button" class="HeroBtn ReadBtn"> {{SecondaryBtn}} </button>
+            </article>
+   </div>  
+</header>
