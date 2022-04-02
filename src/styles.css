@@ -43,6 +43,7 @@
 
 li {
   list-style: none;
+  cursor: pointer;
 }
 
 .SocialsIconContainer {
@@ -58,6 +59,13 @@ li {
 .SocialsIcon img {
   width: 20px;
   height: 20px;
+  transform: scale(1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.SocialsIcon img:hover {
+  transform: scale(1.3);
 }
 
 .hamburgerMenu {
@@ -162,11 +170,22 @@ span {
   color: #ffffff;
   border-radius: 20px;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.HeroBtn:hover {
+  background: #000;
+  color: #fff;
 }
 
 .ReadBtn {
   background: #000000;
   margin-left: 20px;
+}
+
+.ReadBtn:hover {
+  background: #fff;
+  color: #000;
 }
 
 .GalleryContainer {
@@ -230,10 +249,25 @@ span {
   box-shadow: 1px 1.3px 1px 1px #bdbdbd;
 }
 
+.Services:hover {
+  transform: scale(1.05);
+}
+
 .Services,
 .PricingPlan {
   background: #f5fbff;
   box-shadow: 1px 1.3px 1px 1px #bdbdbd;
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+.PricingPlan:hover {
+  transform: translateY(7px);
+}
+
+.PricingPlan button:hover {
+  background: #fff;
+  color: #000;
 }
 
 .pricingPlanDetails,
